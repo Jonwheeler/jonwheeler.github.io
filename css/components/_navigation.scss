@@ -1,0 +1,46 @@
+.navigation {
+  @include outer-container;
+
+  .link {
+    @include span-columns(2);
+    float: right;
+    display: inline-block;
+    padding: 1px;
+    margin: 0;
+    text-align: center;
+    font-family: "Open Sans";
+
+    &:nth-child(1) {
+      background-color: $reddy-brown;
+      &:hover {
+        background-color: darken($reddy-brown, 10%);
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: $fawn;
+      &:hover {
+        background-color: darken($fawn, 10%);
+      }
+    }
+
+    &:nth-child(3) {
+      background-color: $light-blue;
+      &:hover {
+        background-color: darken($light-blue, 10%);
+      }
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  @include media($tablet) {
+    text-align: center;
+    .link {
+      width: 100%;
+      float: left;
+    }
+  }
+}

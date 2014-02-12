@@ -1,0 +1,137 @@
+.poster {
+  margin-top: 30px !important;
+  border: solid 1px $light-grey;
+  border-radius: 5px;
+  background: url(../assets/images/profile.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+
+  .synopsis {
+    position: relative;
+    bottom: -250px;
+    left: 30px;
+
+    .poster-title {
+      color: $white;
+      font-size: 70px;
+    }
+
+    @include media($tablet) {
+      left: 20px;
+
+      .poster-title {
+        font-size: 40px;
+        padding: 20px;
+      }
+    }
+
+    @include media($mobile) {
+      left: 10px;
+
+      .poster-title {
+        font-size: 45px;
+        padding: 0;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      color: $white;
+    }
+  }
+}
+
+.welcome {
+  @include clearfix;
+  color: $light-grey-text;
+  margin-bottom: 40px;
+
+  .welcome-message {
+    padding: 20px;
+
+    .title {
+      font-family: "Open Sans";
+      font-size: 90px;
+      text-align: center;
+    }
+
+    p {
+      @include span-columns(6);
+      @include shift(3);
+
+      @include media($tablet) {
+        @include span-columns(8);
+        @include shift(0);
+      }
+    }
+  }
+}
+
+.skillset {
+  @include clearfix;
+  border-radius: 5px;
+  padding-bottom: 40px !important;
+
+  article {
+    @include span-columns(3);
+    padding-top: 30px;
+    
+    .skill-title { 
+      text-align: center;
+      color: $light-grey-text;
+    }
+
+    @include media($tablet) {
+      @include span-columns(8);
+    }
+
+    .image-thumnail {
+      border-radius: 50%;
+      height: 200px;
+      margin: 20px auto;
+      width: 200px;
+      border: solid 1px $light-grey;
+
+      &.code {
+        @include background-image(url("../assets/images/code.png"));
+      }
+
+      &.craft {
+        @include background-image(url("../assets/images/craft.png"));
+      }
+    }
+
+    p {
+      color: $light-grey-text;
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+}
+
+.map {
+  @include clearfix;
+  background: url("../assets/images/us_map.png") no-repeat center;
+  height: 450px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  margin-bottom: 80px;
+
+  .mark {
+    position: relative;
+    font-size: 30px;
+    left: 58%;
+    top: 113px;
+    color: $reddy-brown;
+  }
+
+  @include media($tablet) {
+    display: none;
+  }
+}

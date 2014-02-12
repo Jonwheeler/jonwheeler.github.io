@@ -1,0 +1,12 @@
+.scroll-button {
+  font-family: "Open Sans";
+  text-align: center;
+  margin: 40px 0;
+
+  a {
+    color: $text;
+    &:hover {
+      color: darken($text, 40%);
+    }
+  }
+}

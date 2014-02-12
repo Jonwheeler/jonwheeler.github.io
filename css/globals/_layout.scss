@@ -1,0 +1,16 @@
+html, body, #main-content-wrapper { 
+  height: 100%; 
+}
+
+body > #main-content-wrapper { 
+  height: auto; 
+  min-height: 100%;
+}
+
+.container {
+  @include outer-container;
+
+  section {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+.header {
+  background: $white;
+  border-bottom: solid 1px $light-grey;
+
+  h1.title {
+    padding-top: 50px; 
+    a {
+      color: $text;
+    }
+  }
+
+  .title, p {
+    font-family: "Open Sans";
+    display: inline-block;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  clear: both;
+  position: relative;
+  z-index: 10;
+  margin-top: -3em;
+
+  width: 100%;
+  background: $fawn;
+  border-top: solid 1px darken($fawn, 10%);
+  
+  .contact {
+    margin: 10px;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 12px;
+
+    .item {
+      color: #333333; 
+
+      a {
+        color: #333333;
+        text-decoration: none;
+
+        &:hover {
+          color: darken($text, 20%);
+        }
+      }
+
+      &:hover {
+        color: darken($text, 20px);
+        cursor: pointer;
+      }
+    } 
+  }
+}
