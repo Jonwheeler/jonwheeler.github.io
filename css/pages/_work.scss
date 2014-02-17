@@ -25,5 +25,10 @@
   }
 }
 
-.dermio {
+.mini-projects {
+  margin-bottom: 70px;
+
+  .project-sample {
+    @include span-columns(4);
+  }
 }
