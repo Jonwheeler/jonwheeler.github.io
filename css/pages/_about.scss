@@ -1,0 +1,10 @@
+.bio {
+  @include span-columns(8);
+}
+
+.photo {
+  @include span-columns(4);
+  img {
+    border-radius: 50%;
+  }
+}
